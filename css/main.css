@@ -44,7 +44,7 @@
     font-weight: bold;
 }
 body {
-font: 20px "Open Sans", sans-serif; 
+font: 20px "Open Sans", sans-serif;
 line-height: 1.8;
 color: #f5f6f7;
 background-color: #353531;
@@ -53,9 +53,12 @@ background-color: #353531;
 p {
 font-size: 16px;
 }
+p a, p a:hover{
+  color:#ffffff;
+}
 .margin {
     margin-bottom:45px;
-} 
+}
 .aboutCol {
     padding: 5px 25px 5px 25px;
 }
