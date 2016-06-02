@@ -8,24 +8,22 @@ body {
 .bg-1 {
     background-color: #fff;
     color: #212121;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .bg-2 {
     background-color: #fff;
     color: #555555;
-    padding-top: 60px;
-    padding-bottom: 90px;
-    margin-top: -30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .bg-3 {
     background-color: #FAFAFA;
     color: #555555;
-    padding-top: 120px;
-    padding-bottom: 90px;
-    margin-top: -30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .bg-4 {
     background-color: #2f2f2f;
