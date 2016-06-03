@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('.hero').height(h);
         var m = 0.4 * h - 40;
         $('.title').css('margin-top', m + 'px');
-    }
+
     $('.navbar').affix({
         offset: {
             top: function() {
@@ -12,6 +12,16 @@ $(document).ready(function() {
             }
         }
     });
+  }
+  else {
+    $('.navbar').affix({
+        offset: {
+            top: function() {
+                return $('.hero').height() ;
+            }
+        }
+    });
+  }
     var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
