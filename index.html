@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Robert McDonald Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -18,21 +19,21 @@
 
 <body>
 
-    <div class="container-fluid hero" id="top">
+    <header class="container-fluid hero" id="top">
         <div class="title">
             <h1 class="orange bigTxt">ROBERT </h1>
             <h1 class="inline bigTxt">MCDONALD</h1></div>
         <div>
-            <h3 class="inline uppercase">Front&nbsp;</h3>
+            <h3 class="orange uppercase">Front&nbsp;</h3>
             <h3 class="orange uppercase">End</h3>
             <br>
             <h3 class="inline underline uppercase">Developer</h3></div>
         <h4 class="">Responsive and tasteful website design.</h4>
-        <div class="animated slideInDown infinite bounceMargin">
-            <a class="downArrow" href="#about"><i class="fa fa-chevron-down" ></i></a>
+        <div class="slideInDown bounceMargin">
+            <a class="downArrow" href="#projects"><i class="fa fa-3x fa-chevron-down" ></i></a>
         </div>
 
-    </div>
+    </header>
     <nav class="navbar navbar-inverse" data-spy="affix">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -51,108 +52,138 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li data-toggle="collapse" data-target="#myNavbar.in"><a href="#about">ABOUT</a></li>
                     <li data-toggle="collapse" data-target="#myNavbar.in"><a href="#projects">PROJECTS</a></li>
+                    <li data-toggle="collapse" data-target="#myNavbar.in"><a href="#about">ABOUT</a></li>
                     <li data-toggle="collapse" data-target="#myNavbar.in"><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid text-center">
+    <section class="container-fluid text-center bg-3 " id="projects">
+        <h1 style="margin-bottom:45px;">Projects</h1>
+        <div class="row ">
+            <div class="col-md-6 no-right">
+                <a href="/wiki-search" target="_blank"><img src="img/wiki-search-large.png" class="img-responsive project" /></a>
+
+            </div>
+            <div class="col-md-6 col-lg-3 no-left">
+                <div class="projUnder">
+                    <h3 class="">Wikipedia Search</h3>
+                    <ul class="skills">
+                        <li>HTML </li>
+                        <li>CSS </li>
+                        <li>JS </li>
+                        <li>JQuery </li>
+                    </ul>
+                </div>
+                <p class="description">I used the Wikipedia API to create a page where a user can open a random page, or be presented with a list of articles matching their query. I included an expanding search bar that opens and closes on click.</p>
+                <a href="/wiki-search" target="_blank"> <i class="fa fa-external-link fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project"></i></a>
+                <a href="http://codepen.io/BobbyMcWho/pen/EKJdjP" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
+            </div>
+        </div>
+        <div class="divide "></div>
+        <div class="row ">
+            <div class="col-md-6 col-md-push-6 no-left">
+                <a href="/hex-bulk-converter" target="_blank"><img src="img/hex-bulk-converter-large.png" class="img-responsive project" /></a>
+
+            </div>
+            <div class="col-md-6 col-lg-3 col-lg-pull-3 col-md-pull-6 no-right">
+                <div class="projUnder">
+                    <h3 class="">Bulk Hex Color Converter</h3>
+                    <ul class="skills">
+                        <li>HTML </li>
+                        <li>CSS </li>
+                        <li>JS </li>
+                        <li>JQuery </li>
+                    </ul>
+                </div>
+                <p class="description">Someone I follow on Twitter was looking for a tool that functioned like this without success. I put this together from scratch as a personal development project. Users can save their tables to localStorage, and retrieve them on a later
+                    visit.</p>
+                <a href="/hex-bulk-converter" target="_blank"><i class="fa fa-external-link fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project"></i></a>
+                <a href="http://codepen.io/BobbyMcWho/pen/XKJmpw" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
+            </div>
+        </div>
+        <div class="divide "></div>
+        <div class="row ">
+            <div class="col-md-6 no-right">
+                <a href="/weather-app" target="_blank"><img src="img/weather-app-large.png" class="img-responsive project" /></a>
+
+            </div>
+            <div class="col-md-6 col-lg-3 no-left">
+                <div class="projUnder">
+                    <h3 class="">Local Weather App</h3>
+                    <ul class="skills">
+                        <li>HTML </li>
+                        <li>CSS </li>
+                        <li>JS </li>
+                        <li>JQuery </li>
+                    </ul>
+                </div>
+                <p class="description">I used the IP-API and Open Weather Map API to create a weather app that shows current temperature with dynamically changing icons based on current conditions. If the location detected is innacurate, the user can change their location.</p>
+                <a href="/weather-app" target="_blank"> <i class="fa fa-external-link fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project"></i></a>
+                <a href="http://codepen.io/BobbyMcWho/pen/pyQOWj" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
+            </div>
+        </div>
+        <div class="divide "></div>
+        <div class="row ">
+            <div class="col-md-6 col-md-push-6 no-left">
+                <a href="/random-quote-generator" target="_blank"><img src="img/random-quote-generator-large.png" class="img-responsive project" /></a>
+
+            </div>
+            <div class="col-md-6 col-lg-3 col-lg-pull-3 col-md-pull-6 no-right">
+                <div class="projUnder">
+                    <h3 class="">Random Quote Generator</h3>
+                    <ul class="skills">
+                        <li>HTML </li>
+                        <li>CSS </li>
+                        <li>JS </li>
+                        <li>JQuery </li>
+                    </ul>
+                </div>
+                <p class="description">I used the Quotes on Design API to pull quotes from their database, and display them to the user, changing the background color each time a new quote is loaded. Users can also click a link to tweet the quote.</p>
+                <a href="/random-quote-generator" target="_blank"><i class="fa fa-external-link fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project"></i></a>
+                <a href="http://codepen.io/BobbyMcWho/pen/MyBLMg" target="_blank"><i class="fa fa-codepen fa-3x link-i" data-toggle="tooltip" data-placement="bottom" title="Open Project on CodePen"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid text-center bg-1 " id="about">
         <div class="row">
-            <section class="col-xs-12 bg-1" id="about">
+            <div class="col-lg-12 about">
+                <h1 class="inline">Passion</h1>
+                <br>
+                <div class="inline">
+                    <h1 class="orange">&amp;</h1></div>
+                <h1 class="inline">Drive</h1>
+                <img src="img/me.png" alt="Robert McDonald" width="200px" class="img img-responsive img-circle me">
                 <div class="row">
-                    <div class="col-lg-12 about">
-                        <h1 class="inline">Passion</h1>
-                        <br>
-                        <div class="inline">
-                            <h1 class="orange">&amp;</h1></div>
-                        <h1 class="inline">Drive</h1>
-                        <img src="img/me.png" alt="Robert McDonald" width="200px" class="img img-responsive img-circle me">
-                        <div class="col-md-6 col-md-offset-3">
-                            <p>Hi, I'm Robert McDonald. I am a front&nbsp;end developer from Akron who loves to create beautiful and feature rich websites. When my keyboard is silent, I am probably on a bike ride or taking my dog Zyra for a walk. </p>
-                        </div>
+                    <div class="col-md-6 col-md-offset-3">
+                        <p>Hi, I'm Robert McDonald. I am a front&nbsp;end developer from Akron who loves to create beautiful and feature rich websites. When my keyboard is silent, I am probably on a bike ride or taking my dog Zyra for a walk. </p>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
     <div class="divide"></div>
     <div class="divide2 visible-md visible-lg"></div>
     <div class="divide3 visible-md visible-lg"></div>
     <div class="divide4 visible-lg"></div>
-    <div class="container-fluid text-center">
+    <section class="container-fluid text-center bg-2" id="contact">
         <div class="row rowMain">
-            <div class="col-md-12 bg-3" id="projects">
-                <h1 style="margin-bottom:45px;">Projects</h1>
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-2">
-                        <a href="/random-quote-generator" target="_blank"><img src="img/random-quote.png" class="img-responsive  project" /></a>
-                        <div class="projUnder">
-                            <h3 class="">Random Quote Generator</h3>
-                            <ul class="skills">
-                                <li>HTML </li>
-                                <li>CSS </li>
-                                <li>JS </li>
-                                <li>JQuery </li>
-                              </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4"><a href="/wiki-search" target="_blank"><img src="img/wiki-search.png" class="img-responsive  project" /></a>
-                        <div class="projUnder">
-                            <h3 class="">Wikipedia Search</h3>
-                            <ul class="skills">
-                                <li>HTML </li>
-                                <li>CSS </li>
-                                <li>JS </li>
-                                <li>JQuery </li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-2"><a href="/weather-app" target="_blank"><img src="img/weather-app.png" class="img-responsive  project" /></a>
-                        <div class="projUnder">
-                            <h3 class="">Local Weather App</h3>
-                            <ul class="skills">
-                                <li>HTML </li>
-                                <li>CSS </li>
-                                <li>JS </li>
-                                <li>JQuery </li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4"><a href="/hex-bulk-converter" target="_blank"><img src="img/bulk-hex.png" class="img-responsive  project" /></a>
-                        <div class="projUnder">
-                            <h3 class="">Bulk Hex Color Converter</h3>
-                            <ul class="skills">
-                                <li>HTML </li>
-                                <li>CSS </li>
-                                <li>JS </li>
-                                <li>JQuery </li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-center" id="contact">
-        <div class="row rowMain">
-            <div class="col-md-12 bg-2">
+            <div class="col-md-4 col-md-offset-4">
                 <h3> Contact Me</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h3>  <a href="#" class="button" style="padding-right:8px;"><i class="fa fa-linkedin-square" style="font-size: 48px;"></i></a>
-                <a href="#" class="button" style="padding-right:8px;"><i class="fa fa-codepen" style="font-size: 48px;"></i></a>
-                <a href="#" class="button"><i class="fa fa-facebook-square" style="font-size: 48px;"></i></a>
-                </h3>
+                <p> Like What you see? Want to contact me or see more of my work? Contact me by email, or check out one of my profiles below!</p>
+                <a href="#" class="link-i email"><i class="fa fa-envelope-o fa-3x" ></i></a>
+                <a href="https://www.linkedin.com/in/robert-mcdonald-9393ab89" target="_blank" class="link-i linkedin" ><i class="fa fa-linkedin-square fa-3x" ></i></a>
+                <a href="https://github.com/BobbyMcWho" target="_blank" class="link-i g" ><i class="fa fa-github fa-3x" ></i></a>
+                <a href="http://codepen.io/BobbyMcWho/" target="_blank" class="link-i codepen" ><i class="fa fa-codepen fa-3x" ></i></a>
+              </span>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid bg-4 text-center">
-        <p> Coded with <i class="fa fa-coffee"></i> by Robert McDonald</p>
-    </div>
+    <footer class="container-fluid bg-4 text-center">
+        <p> Made with <i class="fa fa-coffee"></i> by <a class="orange email" href="mailto:bobby@rmcd.io">Robert McDonald</a></p>
+    </footer>
 
 </body>
 <script src="js/main.js"></script>
