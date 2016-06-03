@@ -7,7 +7,7 @@ body {
 
 .bg-1 {
     background-color: #fff;
-    background-color: #FAFAFA;
+    background-color: #424242;
     color: #212121;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -255,4 +255,7 @@ a.orange:hover,.orange:active,.linkedin:active,.codepen:active,.email:active,.gi
 }
 .github:hover{
   color:#673AB7;
+}
+.whitetxt{
+  color:#fff;
 }
