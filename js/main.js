@@ -12,12 +12,6 @@ $(document).ready(function() {
             }
         }
     });
-    $('.project').mouseenter(function() {
-        $(this).css('opacity', '.6');
-    });
-    $('.project').mouseleave(function() {
-        $(this).css('opacity', '1');
-    });
     var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
@@ -30,7 +24,11 @@ $('.downArrow, .nav a,.navbar-brand').on('click', function () {
   $('html, body').animate({
     scrollTop: $(id).offset().top - nav_height
   }, 500);
+  $el.blur();
 
   return false;
 });
+$('[data-toggle="tooltip"]').tooltip();
+//protect my address
+$('.email').attr('href','mailto:bobby@rmcd.io');
 });
