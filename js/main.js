@@ -1,6 +1,6 @@
 $(document).ready(function() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var h = $('.hero').height();
+        var h = $('.hero').height() + 50;
         $('.hero').height(h);
         var m = 0.4 * h - 40;
         $('.title').css('margin-top', m + 'px');
