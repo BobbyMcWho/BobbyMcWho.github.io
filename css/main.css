@@ -1,7 +1,7 @@
 body {
     font-family: Lato, sans-serif;
     color: #f5f6f7;
-    background-color: #202020;
+    background-color: #444;
     padding: 0;
 }
 
@@ -230,6 +230,12 @@ body {
 .no-right{
   padding-right: 0;
 }
+}
+@media (min-width: 1200px) {
+  .container-fluid#projects {
+    width: 970px;
+    box-shadow: 0 0 5px 0 #000000;
+  }
 }
 .description{
   padding:0 2em;
