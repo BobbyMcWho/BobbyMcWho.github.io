@@ -87,19 +87,27 @@ body {
     margin-top: calc(40vh - 40px);
 }
 
-.affix {
+#navTop.affix {
     top: 0;
     width: 100%;
     /*opacity: .8;*/
     box-shadow: 0 0 5px 0 #000000;
 }
 
-.affix + .container-fluid {
+#navTop.affix + .container-fluid {
     padding-top: 50px;
 }
 
+#navBot.affix {
+    bottom: 0;
+    width: 100%;
+    /*opacity: .8;*/
+    box-shadow: 0 0 5px 0 #000000;
+}
+
+
 .navbar-brand {
-    font-family: Open Sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0;
     text-transform: uppercase;
 }
@@ -264,4 +272,21 @@ a.orange:hover,.orange:active,.linkedin:active,.codepen:active,.email:active,.gi
 }
 .whitetxt{
   color:#fff;
+}
+#botNavbar{
+    padding: auto;
+}
+#botNavbar>ul>li {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  text-align: center;
+}
+@media (min-width: 767px) {
+  #navBot{
+    display:none;
+}
+}
+.affix-offset{
+    margin-top: 50px;
 }

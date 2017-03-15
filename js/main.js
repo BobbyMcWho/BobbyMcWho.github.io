@@ -5,16 +5,22 @@ $(document).ready(function() {
         var m = 0.4 * h - 40;
         $('.title').css('margin-top', m + 'px');
 
-    $('.navbar').affix({
+    $('#navTop').affix({
         offset: {
             top: function() {
-                return $('.hero').height() ;
+                return $('.hero').height();
             }
         }
-    });
+    }).on('affix.bs.affix',function(){
+        $("#projects").addClass("affix-offset");
+    }).on('affix-top.bs.affix',function(){
+        $("#projects").removeClass("affix-offset");
+    })
+    ;
+    
   }
   else {
-    $('.navbar').affix({
+    $('#navTop').affix({
         offset: {
             top: function() {
                 return $('.hero').height() ;
@@ -22,7 +28,13 @@ $(document).ready(function() {
         }
     });
   }
-    var sections = $('section'), nav = $('nav'), nav_height = nav.outerHeight();
+  $('#navTop').on('affix.bs.affix',function(){
+        $("#projects").addClass("affix-offset");
+    }).on('affix-top.bs.affix',function(){
+        $("#projects").removeClass("affix-offset");
+    });
+    
+    var sections = $('section'), nav = $('#navTop'), nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
   nav.find('a').blur();
